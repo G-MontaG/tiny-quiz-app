@@ -6,14 +6,7 @@ import {
   type ReactNode,
   type SetStateAction,
 } from 'react'
-
-const vragen = [
-  {
-    vraag: 'Vraag 1',
-    antwoorden: ['antwoord 1', 'antwoord 2', 'antwoord 3', 'antwoord 4'],
-    correctAntwoord: 0,
-  },
-]
+import vragen from '../assets/vragen.json'
 
 interface QuizState {
   huidigeVraag: number
