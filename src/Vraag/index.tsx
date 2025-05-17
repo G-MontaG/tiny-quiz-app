@@ -5,10 +5,10 @@ function Vraag() {
 
   return (
     <div>
-      <p>
+      <p className="text-2xl text-white">
         {huidigeVraag + 1} van {vragen.length}
       </p>
-      <h1 className="text-4xl text-white">{vragen[huidigeVraag].vraag}</h1>
+      <h1 className="text-6xl text-white">{vragen[huidigeVraag].vraag}</h1>
     </div>
   )
 }

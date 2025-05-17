@@ -1,3 +1,4 @@
+import Antwoorden from './Antwoorden'
 import './App.css'
 import { QuizProvider } from './entities'
 import Vraag from './Vraag'
@@ -5,16 +6,17 @@ import Vraag from './Vraag'
 function App() {
   return (
     <QuizProvider>
-      <div className="h-screen grid grid-cols-2">
-        <div className="flex items-center justify-center bg-sky-300 p-10">
+      <div className="grid h-screen grid-cols-2">
+        <div
+          className={`
+            left-1 flex items-center justify-center border-r-[3px]
+            border-gray-100 bg-sky-300 p-10
+          `}
+        >
           <Vraag />
         </div>
         <div className="flex items-center justify-center p-10">
-          <div>
-            <p>Antwoord 1</p>
-            <p>Antwoord 2</p>
-            <p>Antwoord 3</p>
-          </div>
+          <Antwoorden />
         </div>
       </div>
     </QuizProvider>
