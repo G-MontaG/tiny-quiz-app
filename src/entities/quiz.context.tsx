@@ -10,15 +10,15 @@ import vragen from '../assets/vragen.json'
 
 interface QuizState {
   huidigeVraag: number
+  antwoord?: number
   punten: number
 }
-interface QuizContextState {
+interface QuizContextInnerState {
   vragen: typeof vragen
-  huidigeVraag: number
-  punten: number
 
   setQuizState: (newState: SetStateAction<QuizState>) => void
 }
+type QuizContextState = QuizState & QuizContextInnerState
 const QuizContext = createContext<QuizContextState | null>(null)
 
 export function QuizProvider({ children }: { children: ReactNode }) {

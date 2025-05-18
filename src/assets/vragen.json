@@ -1,5 +1,11 @@
 [
   {
+    "vraag": "Hoe zwaar is een traditionele Goudse kaaswiel ongeveer?",
+    "antwoorden": ["4 kilo", "6 kilo", "12 kilo", "20 kilo"],
+    "correctAntwoord": 2,
+    "feit": "Traditionele Goudse kaaswielen wegen ongeveer 12 kilo. Dit is het standaardgewicht voor de grote ronde wielen die vaak worden verhandeld."
+  },
+  {
     "vraag": "Welk deel van Nederland ligt officieel onder zeeniveau?",
     "antwoorden": [
       "Limburg",
@@ -22,17 +28,6 @@
     "feit": "Windmolens werden oorspronkelijk gebouwd om water uit polders te pompen. Zo hielden Nederlanders hun land droog."
   },
   {
-    "vraag": "Wat betekent de uitdrukking “met de gebakken peren zitten”?",
-    "antwoorden": [
-      "Je hebt een goede lunch",
-      "Je zit met de problemen",
-      "Je hebt de hoofdprijs gewonnen",
-      "Je bent net terug uit de supermarkt"
-    ],
-    "correctAntwoord": 1,
-    "feit": "\"Met de gebakken peren zitten\" betekent dat je met de problemen of de gevolgen van een situatie zit. Het komt van het idee dat gebakken peren moeilijk op te lossen zijn."
-  },
-  {
     "vraag": "Wat is het kleinste bewoonde eiland van de Waddeneilanden?",
     "antwoorden": ["Ameland", "Schiermonnikoog", "Vlieland", "Rottumerplaat"],
     "correctAntwoord": 1,
@@ -50,7 +45,7 @@
     "feit": "Baarle-Nassau is bijzonder omdat het vol ligt met Belgische enclaves, waar Belgische grond zich tussen Nederlandse woningen bevindt."
   },
   {
-    "vraag": "Welk van deze Nederlandse steden is géén officiële provinciehoofdstad?",
+    "vraag": "Welke van deze Nederlandse steden is géén officiële provinciehoofdstad?",
     "antwoorden": ["Assen", "Arnhem", "Eindhoven", "Lelystad"],
     "correctAntwoord": 2,
     "feit": "Eindhoven is géén officiële provinciehoofdstad; 's-Hertogenbosch is de hoofdstad van Noord-Brabant."
@@ -79,9 +74,14 @@
     "feit": "Leiden heeft de oudste universiteit van Nederland, opgericht in 1575."
   },
   {
-    "vraag": "Hoe zwaar is een traditionele Goudse kaaswiel ongeveer?",
-    "antwoorden": ["4 kilo", "6 kilo", "12 kilo", "20 kilo"],
-    "correctAntwoord": 2,
-    "feit": "Traditionele Goudse kaaswielen wegen ongeveer 12 kilo. Dit is het standaardgewicht voor de grote ronde wielen die vaak worden verhandeld."
+    "vraag": "Wat betekent de uitdrukking “met de gebakken peren zitten”?",
+    "antwoorden": [
+      "Je hebt een goede lunch",
+      "Je zit met de problemen",
+      "Je hebt de hoofdprijs gewonnen",
+      "Je bent net terug uit de supermarkt"
+    ],
+    "correctAntwoord": 1,
+    "feit": "\"Met de gebakken peren zitten\" betekent dat je met de problemen of de gevolgen van een situatie zit. Het komt van het idee dat gebakken peren moeilijk op te lossen zijn."
   }
 ]

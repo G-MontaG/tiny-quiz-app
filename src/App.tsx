@@ -8,10 +8,7 @@ function App() {
     <QuizProvider>
       <div className="grid h-screen grid-cols-2">
         <div
-          className={`
-            left-1 flex items-center justify-center border-r-[3px]
-            border-gray-100 bg-sky-300 p-10
-          `}
+          className={`left-1 border-r-[3px] border-blue-100 bg-blue-300 p-10`}
         >
           <Vraag />
         </div>
