@@ -2,6 +2,7 @@ import Antwoorden from './Antwoorden'
 import './App.css'
 import { QuizProvider } from './entities'
 import Vraag from './Vraag'
+import GithubIcon from './assets/github-mark.svg'
 
 function App() {
   return (
@@ -12,8 +13,14 @@ function App() {
         >
           <Vraag />
         </div>
-        <div className="flex items-center justify-center p-10">
+        <div className="flex flex-col items-end p-10">
           <Antwoorden />
+          <a
+            href="https://github.com/G-MontaG/tiny-quiz-app"
+            className={`inline-flex items-center underline`}
+          >
+            <img src={GithubIcon} className="mr-2 size-6" /> GitHub
+          </a>
         </div>
       </div>
     </QuizProvider>

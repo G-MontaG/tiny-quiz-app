@@ -14,7 +14,7 @@ function Antwoorden() {
   }
 
   return (
-    <div className="flex w-full flex-col space-y-5">
+    <div className="flex w-full grow flex-col justify-center space-y-5">
       {antwoord === undefined ? (
         vragen[huidigeVraag].antwoorden.map((antwoord, index) => (
           <button
@@ -44,7 +44,7 @@ function Antwoorden() {
               <span className={`material-symbols-outlined mr-2 text-4xl!`}>
                 close
               </span>
-              Niet Waar
+              Niet waar
             </h2>
           )}
           <p>{vragen[huidigeVraag].feit}</p>

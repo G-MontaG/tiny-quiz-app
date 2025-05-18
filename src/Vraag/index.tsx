@@ -1,4 +1,3 @@
-import { useCallback } from 'react'
 import { useQuizContext } from '../entities'
 
 function Vraag() {
@@ -6,6 +5,14 @@ function Vraag() {
     useQuizContext()
 
   function handleNext() {
+    if (huidigeVraag === vragen.length - 1) {
+      setQuizState({
+        huidigeVraag: 0,
+        punten: 0,
+      })
+      return
+    }
+
     setQuizState({
       huidigeVraag: huidigeVraag + 1,
       punten,
@@ -24,22 +31,22 @@ function Vraag() {
       </div>
       <div className="flex items-center justify-between">
         <h2 className="text-xl text-white">Punten: {punten}</h2>
-        {huidigeVraag < vragen.length - 1 && (
-          <button
-            type="button"
-            disabled={antwoord === undefined}
-            className={`
-              relative inline-flex items-center justify-center rounded-md border
-              border-gray-200 bg-white px-5 py-2.5 text-gray-900
-              hover:bg-gray-100 hover:shadow-sm
-              disabled:cursor-not-allowed disabled:bg-white
-              disabled:text-gray-700 disabled:shadow-none
-            `}
-            onClick={handleNext}
-          >
-            Volgende vraag
-          </button>
-        )}
+        <button
+          type="button"
+          disabled={antwoord === undefined}
+          className={`
+            relative inline-flex items-center justify-center rounded-md border
+            border-gray-200 bg-white px-5 py-2.5 text-gray-900
+            hover:bg-gray-100 hover:shadow-sm
+            disabled:cursor-not-allowed disabled:bg-white disabled:text-gray-700
+            disabled:shadow-none
+          `}
+          onClick={handleNext}
+        >
+          {huidigeVraag === vragen.length - 1
+            ? 'Opnieuw starten'
+            : 'Volgende vraag'}
+        </button>
       </div>
     </div>
   )
